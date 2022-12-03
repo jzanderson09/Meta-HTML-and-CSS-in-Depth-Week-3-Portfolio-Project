@@ -8,24 +8,27 @@
         <meta name="description" content="A business website">
         <meta name="author" content="Lucky Shrub Garden Design Firm">
 
-        <link rel="stylesheet" href="styles.css">
+        <!-- Eric Meyer Reset (Browser Compatibility) -->
+        <link rel="stylesheet" href="./Styling/reset.css">
+        <!-- User CSS -->
+        <link rel="stylesheet" href="./Styling/styles.css">
     </head>
     <body>
-        <header>
-            <img alt="Lucky Shrub" class="logo top-logo" src="Asset 1@3x.png">
+        <header class="page-section">
+            <img alt="Lucky Shrub" class="logo top-logo" src="./Images/Asset 1@3x.png">
+            <nav>
+                <ul>
+                    <li><a href="#"><h1>Home</h1></a></li>
+                    <li><a href="#"><h1>Designs</h1></a></li>
+                    <li><a href="#"><h1>Info</h1></a></li>
+                    <li><a href="#"><h1>Contact</h1></a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Designs</a></li>
-                <li><a href="#">Info</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <main>
+        <main class="page-section">
             <!-- This section will most likely be advertisement or branding/slogan -->
-            <section>
-                <article><div class="promo" style="border: 1px solid black; text-align: center;">Promo section goes here!</div></article>
+            <section class="page-section">
+                <article><h2>Promo Section goes here!</h2></article>
             </section>
             <!-- Potentially an iFrame with photos of garden/landscaping designs -->
             <section>
@@ -34,9 +37,11 @@
                 <article></article>
             </section>
         </main>
-        <footer>
-            <img src="Asset 3@3x.png" alt="Lucky Shrub" class="logo">
-            <p class="copyright">©Lucky Shrub 2022</p>
+        <footer class="page-section">
+            <img src="./Images/Asset 3@3x.png" alt="Lucky Shrub" class="logo">
+            <div class="copyright">
+                <p>©Lucky Shrub 2022</p>
+            </div>
         </footer>
     </body>
 </html>
