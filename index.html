@@ -12,36 +12,92 @@
         <link rel="stylesheet" href="./Styling/reset.css">
         <!-- User CSS -->
         <link rel="stylesheet" href="./Styling/styles.css">
+        <!-- JS for Image Gallery -->
+        <script src="./imageCarousel.js"></script>
     </head>
     <body>
-        <header class="page-section">
-            <img alt="Lucky Shrub" class="logo top-logo" src="./Images/Asset 1@3x.png">
-            <nav>
-                <ul>
-                    <li><a href="#"><h1>Home</h1></a></li>
-                    <li><a href="#"><h1>Designs</h1></a></li>
-                    <li><a href="#"><h1>Info</h1></a></li>
-                    <li><a href="#"><h1>Contact</h1></a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="page-section">
-            <!-- This section will most likely be advertisement or branding/slogan -->
-            <section class="page-section">
-                <article><h2>Promo Section goes here!</h2></article>
-            </section>
-            <!-- Potentially an iFrame with photos of garden/landscaping designs -->
-            <section>
-                <!-- Maybe two articles side by side, indoor and outdoor plants? -->
-                <article></article>
-                <article></article>
-            </section>
-        </main>
-        <footer class="page-section">
-            <img src="./Images/Asset 3@3x.png" alt="Lucky Shrub" class="logo">
-            <div class="copyright">
-                <p>©Lucky Shrub 2022</p>
-            </div>
-        </footer>
+        <div class="dashboard">
+            <header class="page-section">
+                <img alt="Lucky Shrub" class="logo top-logo" src="./Images/Asset 1@3x.png">
+                <nav>
+                    <ul>
+                        <li><a href="#"><h1>Home</h1></a></li>
+                        <li><a href="#"><h1>Designs</h1></a></li>
+                        <li><a href="#"><h1>Info</h1></a></li>
+                        <li><a href="#"><h1>Contact</h1></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="page-section" onmouseover="startSlides()">
+                <!-- This section will most likely be advertisement or branding/slogan -->
+                <section class="page-section">
+                    <article><h2>Now offering 50% off first design for new clients!</h2></article>
+                </section>
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+    
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img class="slide-image" src="./Images/outdoor-garden-1.jpg">
+                        <div class="text"><p>Whether you are new to gardening,</p></div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img class="slide-image" src="./Images/outdoor-garden-2.jpg">
+                        <div class="text"><p>or you're an avid horticulturist,</p></div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img class="slide-image" src="./Images/outdoor-garden-3.jpg">
+                        <div class="text"><p>let us help you design your garden landscape!</p></div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img class="slide-image" src="./Images/outdoor-garden-4.jpg">
+                        <div class="text"><p>As a family owned business for over 40 years,</p></div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img class="slide-image" src="./Images/outdoor-garden-5.jpg">
+                        <div class="text"><p>we'll help you develop a sustainable garden!</p></div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img class="slide-image" src="./Images/outdoor-garden-6.jpg">
+                        <div class="text"><p>Sustainable gardens provide for the outside life,</p></div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img class="slide-image" src="./Images/outdoor-garden-7.jpg">
+                        <div class="text"><p>as well as the lives in your home!</p></div>
+                    </div>
+                    
+                </div>
+                <br>
+      
+                <!-- Slide controls/buttons -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                </div>
+    
+            </main>
+            <footer class="page-section">
+                <img src="./Images/Asset 3@3x.png" alt="Lucky Shrub" class="logo footer-logo">
+                <p class="copyright">©Lucky Shrub 2022</p>
+            </footer>
+        </div>
     </body>
 </html>
